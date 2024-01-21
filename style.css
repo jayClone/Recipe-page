@@ -1,0 +1,254 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+display: grid;
+height: 100%;
+width: 100%;
+background-color: #F3E5D8;
+}
+@font-face {
+    font-family: 'outfit' ;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'YoungSerif';
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+.card{
+    margin: 70px 0 ;
+    place-self: center;
+    width: 730px;
+    height: 1705px;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+}
+.image img{
+    margin: 40px 0px 0px 40px;
+    width: 655px;
+    height: 300px;
+    border-radius: 1rem;
+}
+.title h1{
+    margin: 40px;
+    font-family: 'YoungSerif';
+    font-size: 40px;
+    font-weight: 400;
+    color: #000000;
+}
+.description p{
+    margin: 0px 40px 0px 40px;
+    font-family: 'outfit';
+    font-size: 16px;
+    font-weight: 400;
+}
+.prep{
+    height: 175px;
+    width: 655px;
+    background-color: hsl(330, 100%, 98%);
+    margin:40px;
+    border-radius: 1rem;
+}
+.prep h3{
+    padding: 20px 0px 0px 20px;
+    font-family: 'outfit';
+    font-size: 16px;
+    color: hsl(334, 47%, 29%);
+    font-weight: 700;
+}
+.prep li{
+    margin-left: 40px;
+    padding: 12px 0px 6px 20px;
+    font-family: 'outfit';
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+.ingredients h3{
+    margin: 35px 0px 10px 40px;
+    font-size: 27px;
+    color: hsl(17, 45%, 35%);
+    font-family: youngSerif;
+    font-weight: 300;
+}
+.ingredients ul{
+    margin-left: 60px;
+    font-family: outfit;
+}
+.ingredients li{
+
+    padding: 6px 0px 6px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+.card hr{
+    margin: 30px;
+}
+.instructions h3{
+    margin: 35px 0px 10px 40px;
+    font-size: 27px;
+    color: hsl(17, 45%, 35%);
+    font-family: youngSerif;
+    font-weight: 300;
+}
+.instructions ol{
+    font-family: 'outfit';
+    margin-left: 60px;
+    margin-right: 40px;
+}
+.instructions li{
+    font-family: 'outfit';
+    padding: 6px 0px 6px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+.instructions li::marker{
+    color: hsl(30, 10%, 34%);
+    font-weight: bold;
+}
+.instructions ol::marker{
+    color: hsl(30, 10%, 34%);
+    font-weight: bold;
+}
+.nutrition h3{
+    margin: 0px 0px 10px 40px;
+    font-size: 27px;
+    color: hsl(17, 45%, 35%);
+    font-family: youngSerif;
+    font-weight: 300;
+}
+.nutrition p{
+    margin: 0px 0px 0px 40px;
+    font-family: 'outfit';
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+#a1, #a2, #a3, #a4 {
+    display: flex;
+    margin: 10px 0 10px 30px;
+}
+@media (max-width: 375px){
+    .card{
+        width: 100%;
+        height: 100%;
+        background-color: #FFFFFF;
+        border-radius: 0rem;
+        }
+    .image img{
+        width: 100%;
+        height: 170px;
+        border-radius: 0rem;
+        margin: 0px;
+    }
+    .title h1{
+        margin: 30px;
+        font-family: 'YoungSerif';
+        font-size: 40px;
+        font-weight: 600;
+        color: #000000;
+        padding: 0%;
+    }
+    .description p{
+        margin: 30px;
+        font-family: 'outfit';
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .prep{
+        height: 190px;
+        width: 355px;
+        background-color: hsl(330, 100%, 98%);
+        margin:30px;
+        border-radius: 1rem;
+    }
+    .prep h3{
+        padding: 20px 0px 0px 20px;
+        font-family: 'outfit';
+        font-size: 18px;
+        color: hsl(334, 47%, 29%);
+        font-weight: 700;
+    }
+    .prep li{
+        margin-left: 40px;
+        padding: 12px 0px 6px 20px;
+        font-family: 'outfit';
+        font-size: 16px;
+        font-weight: 400;
+        color: hsl(30, 10%, 34%);
+    }
+    .ingredients h3{
+        margin: 35px 0px 10px 40px;
+        font-size: 30px;
+        color: hsl(17, 45%, 35%);
+        font-family: youngSerif;
+        font-weight: 300;
+    }
+    .ingredients ul{
+        margin-left: 60px;
+        font-family: outfit;
+    }
+    .ingredients li{
+    
+        padding: 6px 0px 6px 20px;
+        font-size: 16px;
+        font-weight: 400;
+        color: hsl(30, 10%, 34%);
+}
+    .card hr{
+        margin: 30px;
+    }
+    .instructions h3{
+        margin: 35px 0px 10px 40px;
+        font-size: 30px;
+        color: hsl(17, 45%, 35%);
+        font-family: youngSerif;
+        font-weight: 300;
+    }
+    .instructions ol{
+        font-family: 'outfit';
+        margin-left: 60px;
+        margin-right: 40px;
+    }
+    .instructions li{
+        font-family: 'outfit';
+        padding: 6px 0px 6px 20px;
+        font-size: 16px;
+        font-weight: 400;
+        color: hsl(30, 10%, 34%);
+    }
+    .instructions li::marker{
+        color: hsl(30, 10%, 34%);
+        font-weight: bold;
+    }
+    .instructions ol::marker{
+        color: hsl(30, 10%, 34%);
+        font-weight: bold;
+    }
+    .nutrition h3{
+        margin: 0px 0px 10px 40px;
+        font-size: 30px;
+        color: hsl(17, 45%, 35%);
+        font-family: youngSerif;
+        font-weight: 300;
+    }
+    .nutrition p{
+        margin: 0px 0px 0px 40px;
+        font-family: 'outfit';
+        font-size: 16px;
+        font-weight: 400;
+        color: hsl(30, 10%, 34%);
+    }
+    #a1, #a2, #a3, #a4 {
+        display: flex;
+        margin: 20px 0 10px 30px;
+        row-gap: 0px;
+    }
+    #a1 p, #a2 p, #a3 p, #a4 p{
+        margin-left: 20px;
+    }
+}
